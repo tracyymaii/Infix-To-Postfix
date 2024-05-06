@@ -163,7 +163,6 @@ int main(int argc, char* argv[]) {
     size_t count = 0, total = 0, extra = 0, json = 0;
     bool error;
     double value;
-
     while (getline(*input, infixExpression) && getline(*solution, postfixExpression) && getline(*jsonValues, jsonValue)){
         e = new Expression(infixExpression);
         e->ConvertToPostfix();
