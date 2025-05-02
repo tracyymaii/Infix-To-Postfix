@@ -1,10 +1,10 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/LT-dNi7x)
+
 # Infix to Postfix
 Conversion of an arithmetic expression from infix notation to postfix notation.
 Infix to Postfix conversion, from D.S. Malik, Exercise #10 Chapter 19
 
 ## Goal
-In this lab. you will practice:
+In this lab. I practiced:
 * Solving a problem given a general algorithm
 * Further practice using classes
 * **Use** the C++ STL class `stack`
@@ -47,7 +47,7 @@ The rules to convert an infix expression into an equivalent postfix expression a
 5. After processing `infix`, some operators may be left in the stack. Pop and append to `postfix` everything from the stack.
 
 ## Additional Comments
-In this program, you will consider the following (binary) arithmetic operators: +, -, *, and /. You may assume that the expressions you will process are error free.
+In this program, I considered the following (binary) arithmetic operators: +, -, *, and /. I assume that the expressions I will process are error free.
 
 Design a class `Expression` that stores the infix and postfix strings. The class must include the following methods:
 
@@ -58,12 +58,6 @@ Design a class `Expression` that stores the infix and postfix strings. The class
 Recommendations (Not required but possibly good ideas)
 * Create a _function_ `Precedence` determines the precedence between two operators. If the first operator is of higher or equal precedence than the second operator, it returns `true`, it will return `false` otherwise.
 * Create a _function_ `Next` that takes in a string and returns the next "thing" (operator, operand or parenthesis) from the string send as parameter.
-
-
-Other design considerations:
-* If your class uses dynamic memory, remember to apply the rule of three.
-* Your class must have the appropriate constructor.
-* You are **required** to use the class stack from the C++ STL, for details see here: [C Plus Plus Stack Reference](https://cplusplus.com/reference/stack/)
 
 ## A Good Learning Opportunity
 It will be of tremendous benefit if you study the provided `main.cpp`. You are not allowed to change its code, but it has many _goodies_, tips and tricks that may prove useful in the future.
@@ -79,62 +73,6 @@ A + B - C
 A + ( ( B + C ) * ( E - F ) - G ) / ( H - I)
 A + B * ( C + D ) - E / F * G + H
 ```
-
-### Grading Rubric
-
-Most of your grade comes from passing the tests. The following formula will be used:
-
-$G = 70 * IP/T + 30 * JS/T + 30 * EX/XT$
-
-The variables used:
-* $G$ is the total grade
-* $T$ is the total number of tests
-* $IP$ is the infix-postfix tests passed
-* $JS$ is the JSON tests passed
-* $XT$ is the total number of extra credit tests
-* $EX$ is the number of extra credit tests passed
-
-**You can only get the extra credit if you finish the infix-to-postfix part of this assignment**
-
-#### Deductions
-* For each infraction on good programming practices there will be a deduction of 5 points
-* If the program has a runtime error (the program crashes) there will be a deduction of 20 points
-* If the program has warnings there will be a deduction of 10 points
-* If `valgrind` reports any errors there will be a deduction of 10 points
-* If the program does not have comment headers there will be a deduction of 5 points
-* If the program does not have comments on functions and appropriate additional comments there will be a deduction of 5 points
-* If the program does not follow instructions, for instance if you did not implement any of the requested functions, there will be a deduction of 5 points per ignored instruction
-* If the program does not compile, the grade will be zero.
-* If the program does not use the `stack` class from C++ STL, the grade will be zero.
-
-```
- __          __              _             
- \ \        / /             (_)            
-  \ \  /\  / /_ _ _ __ _ __  _ _ __   __ _ 
-   \ \/  \/ / _` | '__| '_ \| | '_ \ / _` |
-    \  /\  / (_| | |  | | | | | | | | (_| |
-     \/  \/ \__,_|_|  |_| |_|_|_| |_|\__, |
-                                      __/ |
-                                     |___/ 
-                                     
-R E M E M B E R    T O    C H E C K    C A N V A S
-F O R   P R O G R A M M I N G   P R A C T I C E S
-```
-> NOTE: Remember to check the Canvas Page about Programming Practices and the course coding conventions.
-
-## Academic Integrity
-
-This programming assignment is to be done on an **individual** basis. At the same time, it is understood that learning from your peers is valid, and you are encouraged to talk among yourselves about programming in general and current assignments in particular.  Keep in mind, however, that each individual student must do the work in order to learn.
-
-Hence, the following guidelines are established:
-* Feel free to discuss any and all programming assignments but do not allow other students to look at or copy your code. Do not give any student an electronic or printed copy of any program you write for this class.
-* Gaining the ability to properly analyze common programming errors is an important experience. Do not deprive a fellow student of his/her opportunity to practice problem solving: control the urge to show them what to do by writing the code for them.
-* If you’ve given the assignment a fair effort and still need help, see the instructor or a lab assistant.
-* If there is any evidence that a program or other written assignment was copied from another student (or from any source), neither student will receive any credit for it. This rule will be enforced.
-* Protect yourself: Handle throw-away program listings carefully.
-* Remember to read the Academic Integrity guidelines provided in the class syllabus.
-* DO NOT copy code from any source, **ALL** the submitted code should be written by you (except the code that is given).
-
 
 ## How to run
 This program needs to be run from the command line. Running from CLion may result a little cumbersome. Steps as follows, with different ways to run the program.

@@ -1,5 +1,5 @@
 /**
- * Title:		Lab 03 - infix_to_postfix.cpp
+ * Title:		infix_to_postfix.cpp
  * Purpose:		Converts a math function as how people read it (infix) to a
  *              statement that computers understand to evaluate it (postfix).
  * Author:		Tracy Mai
@@ -16,12 +16,6 @@ using std::string;
 using std::stringstream;
 
 /**
- * Got this from: https://stackoverflow.com/questions/1798112/removing-leading-and-trailing-spaces-from-a-string
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- * W A R N I N G        W A R N I N G        W A R N I N G        W A R N I N G    * *
- * Even when I am giving you code that I found on the Internet, you are still      * *
- * not allowed to copy ANY code from the Internet or from any AI tool.             * *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * @param str the string that we want to trim from trailing and leading spaces
  * @param whitespace the whitespaces we want to remove, by default it will remove space and tab
  * @return a string without leading or trailing spaces.
